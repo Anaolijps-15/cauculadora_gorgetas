@@ -28,6 +28,7 @@ header {
     justify-content: center;
     padding-block: 2.8rem;
 }
+
 main {
     background-color: var(--white);
     padding: 2rem;
@@ -79,8 +80,6 @@ main {
 .pessoas:has(input:focus) div {
     outline: 2px solid var(--light-green);
 }
-
-
 
 .gorjeta div {
     margin-top: 1rem;
@@ -162,4 +161,23 @@ main {
     text-transform: uppercase;
     font-size: 1.25rem;
     padding-block: 0.5rem;
+}
+
+@media (min-width: 920px) {
+    main{
+        display: flex;
+        gap: 3rem;
+        padding: 3rem;
+        border-radius: 1.5625rem;
+        max-width: 57.5rem;
+        margin-inline: auto;
+    }
+
+    main section {
+        width: 100%;
+    }
+
+    .gorjeta div {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
