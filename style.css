@@ -108,8 +108,8 @@ main {
     color: var(--white);
 }
 
-.gorjeta input [type= "button"] :hover ,
-.resultados button:hover {
+.gorjeta input [type= "button"]:hover,
+.resultados button:hover{
     background-color: var(--green-houver);
 }
 
